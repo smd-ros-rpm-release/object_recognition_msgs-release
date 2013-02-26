@@ -1,0 +1,15 @@
+Source: ros-fuerte-object-recognition-msgs
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-fuerte-catkin, ros-fuerte-common-msgs, ros-fuerte-genmsg, ros-fuerte-langs-dev
+Homepage: http://www.ros.org/wiki/object_recognition
+Standards-Version: 3.9.2
+
+Package: ros-fuerte-object-recognition-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-fuerte-common-msgs, ros-fuerte-langs
+Description: Object_recognition_msgs contains the ROS message and the actionlib definition used in object_recognition_core
+ .
+ This stack contains the packages:
+ * /tmp/tmpp5Yk7X/clone: 
