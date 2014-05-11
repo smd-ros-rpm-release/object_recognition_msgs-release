@@ -1,0 +1,229 @@
+ros-hydro-object-recognition-msgs (0.4.1-0precise) precise; urgency=high
+
+  * have the package be architecture independent
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 10 May 2014 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.4.0-0precise) precise; urgency=high
+
+  * "0.4.0"
+  * fixes #3 <https://github.com/wg-perception/object_recognition_msgs/issues/3> by moving docs to object_recognition_ros
+    remove docs as their built depends on ecto. Put everything in object_recognition_ros
+  * let message generation handle Python
+  * no need for stack.xml now that Fuerte support is dropped
+  * remove redundant info in Table.msg
+  * add headers to the Table messages
+  * drop Fuerte support
+  * change email address
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 07 Dec 2013 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.19-0precise) precise; urgency=high
+
+  * use the mesh from shape_msgs
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Wed, 27 Mar 2013 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.18-0precise) precise; urgency=high
+
+
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Mon, 11 Mar 2013 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.17-0precise) precise; urgency=high
+
+  * rename the type to key to keep the DB paradigm
+  * add dependencies
+  * update the dependencies
+  * get the compile to compile even without ecto
+  * rename ObjectId to ObjectType
+  * add basic docs
+  * no need for the include folder that was only used by tabletop
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Thu, 07 Mar 2013 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.16-0precise) precise; urgency=high
+
+  * add the std_msgs dependency
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Tue, 26 Feb 2013 19:19:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.15-0precise) precise; urgency=high
+
+  * fix unneeded dependencies
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Tue, 26 Feb 2013 10:19:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.14-0precise) precise; urgency=high
+
+  * have the ecto cells be generated in object_recognition_ros
+  * CMake cleanups
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 23 Feb 2013 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.13-0precise) precise; urgency=high
+
+  * use the proper catkin variable
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 12 Jan 2013 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.12-0precise) precise; urgency=high
+
+  * remove some warnings
+  * remove some compilation error
+  * added an optional ROI into the object recognition action
+  * add an other conversion routine
+  * Contributors: Tommaso Cavallari, Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Thu, 03 Jan 2013 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.11-0precise) precise; urgency=high
+
+  * install to the right location on Fuerte
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sun, 18 Nov 2012 16:06:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.10-0precise) precise; urgency=high
+
+  * try to fix the Unknown CMake command "find_program_required".
+  * added header to RecognizedObjectArray
+  * remove the copyright tag
+  * Contributors: Tommaso Cavallari, Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sun, 18 Nov 2012 15:50:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.9-0precise) precise; urgency=high
+
+  * fix the install paths
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Fri, 02 Nov 2012 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.8-0precise) precise; urgency=high
+
+  * fix install on Fuerte
+  * find ecto so that we can check whether we are on Fuerte
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Wed, 31 Oct 2012 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.7-0precise) precise; urgency=high
+
+  * call generate_messages before catkin_package to comply to the new API
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Mon, 29 Oct 2012 23:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.6-0precise) precise; urgency=high
+
+  * fix dependencies
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Wed, 10 Oct 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.5-0precise) precise; urgency=high
+
+  * remove support for Electric which was broken anyway since we are using Shape from Fuerte and above
+  * comply to the new API
+  * comply to the new catkin API
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Tue, 09 Oct 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.4-0precise) precise; urgency=high
+
+  * have code work with Electric/Fuerte/Groovy
+  * use the cleaner pubsub API
+  * use the new ectomodule API
+  * remove the Shape msg, as mentioned before, this is in common_msgs now
+  * add the manifest so that we can build against it on fuerte with rosbuild
+  * Merge branch 'master' of https://github.com/wg-perception/object_recognition_msgs
+  * updated shape_conversions to use the common_msgs shape message
+    instead of the arm_navigation one
+  * actually build the message
+  * Forgotten shape message
+  * Contributors: Jonathan Binney, Mac Mason, Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Fri, 07 Sep 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.3-0precise) precise; urgency=high
+
+  * use the mesh message from common_msgs
+  * fix the new langs/langs-dev dependencies
+  * copy from the current dir
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sun, 01 Jul 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.2-0precise) precise; urgency=high
+
+  * fix bad install of the .msg
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Tue, 05 Jun 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.1-0precise) precise; urgency=high
+
+
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sun, 03 Jun 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.3.0-0precise) precise; urgency=high
+
+  * bump the version
+  * make the Shape be part of OR and not arm_navigation_msgs
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 28 Apr 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.2.0-0precise) precise; urgency=high
+
+  * bump version number
+  * use the proper macro to create the pub/sub cells
+  * add the missing array
+  * add more __init__ for electric
+  * make sure to use the _msgs msgs
+  * more quirks
+  * fix a few quirks
+  * build messages for Table
+  * do not depend on tabletop
+  * add some python stuff
+  * add the table msgs for now
+  * have cells publishing/subscribing to the msgs
+  * fix typos
+  * Update msg/RecognizedObject.msg
+  * and we do need ecto for electric ......
+  * no need for action/srv on electric
+  * find ecto to get find_ros_package
+  * update some dependencies
+  * use arm_navigation_msgs properly
+  * include Jenny's comments
+  * clearner messages and server
+  * fix th bad action msg
+  * clean the different messages
+  * do not generate action files for electric
+  * fix more electric stuff
+  * fix typo
+  * more fixes for electric
+  * fix the bad recognition of electric
+  * Contributors: Vincent Rabaud, pantofaru
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Mon, 09 Apr 2012 22:00:00 -0000
+
+ros-hydro-object-recognition-msgs (0.1.0-0precise) precise; urgency=high
+
+  * create a special package for the messages
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Fri, 16 Mar 2012 23:00:00 -0000
+
+
